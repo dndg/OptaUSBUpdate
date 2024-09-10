@@ -31,7 +31,7 @@ void doUSBUpdate()
 {
     // The file UPDATE.OTA is stored on the second FAT partition.
     OptaUSBUpdate_QSPI update(QSPI_FLASH_FATFS_MBR, 2);
-    OptaUSBUpdate::Error update_error = update.updateFromUSB("UPDATE.OTA"));
+    OptaUSBUpdate::Error update_error = update.updateFromUSB("UPDATE.OTA");
 
     if (update_error != OptaUSBUpdate::Error::None)
     {
