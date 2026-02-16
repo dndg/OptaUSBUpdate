@@ -46,11 +46,11 @@ void doUSBUpdate()
 
 To create the `UPDATE.OTA` file, start from a sketch and follow the steps:
 
-1) In Arduino IDE select **Sketch->Export compiled Binary** from the menu or,
-if using `arduino-cli` use the `--export-binaries` command line option.
+1. In Arduino IDE select **Sketch->Export compiled Binary** from the menu or,
+   if using `arduino-cli` use the `--export-binaries` command line option.
 
-2) From the command line, execute the `bin2ota.py` program that can be found
-in the `extras/make-ota` folder:
+2. From the command line, execute the `bin2ota.py` program that can be found
+   in the `extras/make-ota` folder:
 
 ```
 $ extras/make-ota/bin2ota.py OPTA yoursketch.bin UPDATE.OTA
@@ -58,17 +58,13 @@ $ extras/make-ota/bin2ota.py OPTA yoursketch.bin UPDATE.OTA
 
 ## Resources
 
-* [Getting started with Opta](https://opta.findernet.com/en/tutorial/getting-started).
+- [Getting started with Opta](https://opta.findernet.com/en/tutorial/getting-started).
 
 ## License
 
-This library is released under version 3 of the GNU General Public License. 
+This library is released under version 3 of the GNU General Public License.
 For more details read [the full license](./LICENSE).
 
 The code in `extras/make-ota` is a modified version of the Arduino code
 available from https://github.com/arduino-libraries/ArduinoIoTCloud/ and
 has the same license (GPL3).
-
-## Contact
-
-For communication reach out to <iot@dndg.it>.
